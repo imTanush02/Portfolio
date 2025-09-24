@@ -43,7 +43,7 @@ const GlowingEffect = memo(({
       const inactiveRadius = 0.5 * Math.min(width, height) * inactiveZone;
 
       if (distanceFromCenter < inactiveRadius) {
-        element.style.setProperty("--active", "0");
+        element.style.setProperty("--active", "0")
         return;
       }
 
