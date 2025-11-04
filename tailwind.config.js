@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        rogshire: ['Rogshire', 'sans-serif'],
-        rewritten: ['RewrittenByMachine', 'cursive'],
+        rogshire: ["Rogshire", "sans-serif"],
+        rewritten: ["RewrittenByMachine", "cursive"],
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
@@ -27,12 +27,14 @@ module.exports = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        
       },
     },
   },
   plugins: [
     addVariablesForColors,
-    function ({ matchUtilities, theme }) { // : any hata diya
+    function ({ matchUtilities, theme }) {
+      // : any hata diya
       matchUtilities(
         {
           "bg-grid": (value) => ({
@@ -57,7 +59,8 @@ module.exports = {
   ],
 };
 
-function addVariablesForColors({ addBase, theme }) { // : any hata diya
+function addVariablesForColors({ addBase, theme }) {
+  // : any hata diya
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
