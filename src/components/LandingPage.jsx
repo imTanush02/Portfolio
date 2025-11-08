@@ -51,7 +51,7 @@ const LandingPage = () => {
           <h1 className="-mb-2 lg:-mb-4">—FULLSTACK DEVELOPER</h1>
           <h1 className="-mb-2 lg:-mb-4">—FREELANCER</h1>
           <h1>—VIDEO EDITOR</h1>
-        </div> 
+        </div>
 
         {/* Main Content Section */}
         <div className="flex flex-col lg:flex-row w-full relative justify-start h-[30vh] lg:h-[40vh] text-zinc-300 items-center">
@@ -84,7 +84,7 @@ const LandingPage = () => {
           <div className="w-[100%]  lg:w-1/2 text-[12vh] lg:text-[30vh] flex flex-col justify-center h-fit lg:h-full ">
             <h1 className="mb-[-12vh] translate-x-[10%] lg:mb-[-26vh] relative">
               MERN{" "}
-              <span className="text-zinc-500 ml-2 lg:ml-4 absolute z-[99]">
+              <span className="text-zinc-500 ml-2 lg:ml-4 absolute z-[99999]">
                 {" "}
                 Developer
               </span>
@@ -92,16 +92,19 @@ const LandingPage = () => {
             <h1>
               <span className="text-zinc-500">&</span> Video Editor
             </h1>
-            <div className="w-full flex justify-center lg:justify-start h-[10%] mt-12 lg:mt-0">
-
-            <HoverBorderGradientDemo   />
+            <div className="w-full flex justify-center z-[999] lg:justify-start h-[10%] mt-12 lg:mt-0">
+              <HoverBorderGradientDemo />
             </div>
           </div>
           <div className="w-[10%] h-full bg-zinc-300"></div>
           <div className="w-[5%] mt-[15vh] lg:mt-[30vh] h-[5vh] lg:h-[10vh] bg-zinc-300"></div>
 
           <div className="absolute right-0 lg:right-[-3%] mt-[2%] lg:mt-[4%] 2xl:mt-[8%] pointer-events-none w-1/2 lg:w-[55%] 2xl:w-[48%]">
-            <img src="/assets/Modelimg.png" alt="" className="w-full scale-[170%] lg:scale-[100%] mt-[50%] lg:mt-[0%] h-auto" />
+            <img
+              src="/assets/Modelimg.png"
+              alt=""
+              className="w-full scale-[170%] lg:scale-[100%] mt-[50%] lg:mt-[0%] h-auto"
+            />
           </div>
         </div>
 
