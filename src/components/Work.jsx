@@ -109,7 +109,7 @@ const Work = () => {
   return (
     <div
       id="works"
-      className="w-full lg:h-[220vh] relative font-rogshire mt-20 min-h-screen bg-black text-white p-5 lg:p-10 overflow-hidden"
+      className="w-full lg:h-[220vh] relative font-rogshire mt-[100%] lg:mt-20 min-h-screen bg-black text-white p-5 lg:p-10 overflow-hidden"
     >
       <h1 className="text-6xl lg:text-8xl font-rogshire text-center lg:text-start text-zinc-300">
         Best Works
