@@ -109,13 +109,13 @@ const Work = () => {
   return (
     <div
       id="works"
-      className="w-full lg:h-[220vh] relative font-rogshire  lg:mt-20 mt-[120vh] mt-0 min-h-screen bg-black text-white p-5 lg:p-10 overflow-hidden"
+      className="w-full lg:h-[220vh] relative font-rogshire mt-20 min-h-screen bg-black text-white p-5 lg:p-10 overflow-hidden"
     >
       <h1 className="text-6xl lg:text-8xl font-rogshire text-center lg:text-start text-zinc-300">
         Best Works
       </h1>
       
-      <div className="w-full mt-10 lg:mt-20 rounded-2xl duration-300 flex flex-col gap-8 lg:gap-5">
+      <div className="w-full mt-10 rounded-2xl duration-300 flex flex-col gap-8 lg:gap-5">
         {works.map((work, idx) => (
           <Link to={work.link}
             key={idx}
