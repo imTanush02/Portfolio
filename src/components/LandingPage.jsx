@@ -6,7 +6,7 @@ const LandingPage = () => {
     <div className="p-3 sm:p-5 md:p-10">
       <div className="text-white w-full rounded-lg border-zinc-800 font-rogshire border-b-[1.5px] border-x-[1.5px] min-h-[70vh] sm:min-h-[80vh] lg:min-h-[90vh] bg-transparent">
         {/* Header Section */}
-        <div className="flex flex-col sm:flex-row justify-between items-center w-full px-3 sm:px-5 lg:px-10 py-3 sm:py-5 gap-3 sm:gap-0">
+        <div className="flex  justify-between items-center w-full px-3 sm:px-5 lg:px-10 py-3 sm:py-5 gap-3 sm:gap-0">
           <a
             href="/Tanush Singh.pdf"
             download="Tanush_Singh_Resume.pdf"
@@ -51,11 +51,11 @@ const LandingPage = () => {
           <h1 className="-mb-2 lg:-mb-4">—FULLSTACK DEVELOPER</h1>
           <h1 className="-mb-2 lg:-mb-4">—FREELANCER</h1>
           <h1>—VIDEO EDITOR</h1>
-        </div>
+        </div> 
 
         {/* Main Content Section */}
-        <div className="flex w-full relative justify-start h-[30vh] lg:h-[40vh] text-zinc-300 items-center">
-          <div className="w-1/4 p-5 lg:p-10 flex font-light text-lg lg:text-2xl flex-col gap-3 lg:gap-4">
+        <div className="flex flex-col lg:flex-row w-full relative justify-start h-[30vh] lg:h-[40vh] text-zinc-300 items-center">
+          <div className="w-full lg:w-1/4 p-5 bottom-[110%] absolute lg:relative lg:bottom-0 justify-end  lg:p-10 flex font-light text-lg lg:text-2xl flex-row lg:flex-col gap-3 lg:gap-4">
             <a
               href="https://www.linkedin.com/in/tanush-singh-"
               target="_blank"
@@ -81,24 +81,27 @@ const LandingPage = () => {
               <i className="ri-github-line"></i>
             </a>
           </div>
-          <div className="w-1/2 text-[12vh] lg:text-[30vh] flex flex-col justify-center h-full">
-            <h1 className="mb-[-12vh] lg:mb-[-26vh] relative">
-              Web{" "}
-              <span className="text-zinc-500 ml-2 lg:ml-4 absolute z-[9]">
+          <div className="w-[100%]  lg:w-1/2 text-[12vh] lg:text-[30vh] flex flex-col justify-center h-fit lg:h-full ">
+            <h1 className="mb-[-12vh] translate-x-[10%] lg:mb-[-26vh] relative">
+              MERN{" "}
+              <span className="text-zinc-500 ml-2 lg:ml-4 absolute z-[99]">
                 {" "}
-                Designer
+                Developer
               </span>
             </h1>
             <h1>
-              <span className="text-zinc-500">&</span> Developer
+              <span className="text-zinc-500">&</span> Video Editor
             </h1>
-            <HoverBorderGradientDemo />
+            <div className="w-full flex justify-center lg:justify-start h-[10%] mt-12 lg:mt-0">
+
+            <HoverBorderGradientDemo   />
+            </div>
           </div>
           <div className="w-[10%] h-full bg-zinc-300"></div>
           <div className="w-[5%] mt-[15vh] lg:mt-[30vh] h-[5vh] lg:h-[10vh] bg-zinc-300"></div>
 
           <div className="absolute right-0 lg:right-[-3%] mt-[2%] lg:mt-[4%] 2xl:mt-[8%] pointer-events-none w-1/2 lg:w-[55%] 2xl:w-[48%]">
-            <img src="/assets/Modelimg.png" alt="" className="w-full h-auto" />
+            <img src="/assets/Modelimg.png" alt="" className="w-full scale-[170%] lg:scale-[100%] mt-[50%] lg:mt-[0%] h-auto" />
           </div>
         </div>
 

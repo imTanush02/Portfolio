@@ -7,7 +7,7 @@ const Main = () => {
       id="about"
       className="w-full py-10 lg:py-20 2xl:py-20 flex flex-col mt-10 items-center gap-3 px-5 sm:px-10 lg:px-20 2xl:px-20 bg-black text-white min-h-screen"
     >
-      <h1 className="font-rogshire text-4xl sm:text-5xl lg:text-6xl 2xl:text-8xl text-zinc-300">
+      <h1 className="font-rogshire text-6xl sm:text-5xl lg:text-6xl 2xl:text-8xl text-zinc-300">
         About Myself
       </h1>
       <p className="font-rogshire text-zinc-300 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl w-full sm:w-[80%] lg:w-[60%] 2xl:w-[45vw] text-center">
@@ -168,7 +168,7 @@ const Main = () => {
               proximity={64}
               inactiveZone={0.01}
             />
-            <div className="w-full h-[30vh] sm:h-[40vh] rounded-2xl lg:h-[60vh] 2xl:h-[50vh] bg-zinc-[#EDEDED] relative">
+            <div className="w-full h-[45vh] sm:h-[30vh] rounded-2xl lg:h-[60vh] 2xl:h-[50vh] bg-zinc-[#EDEDED] relative">
               <div className="flex justify-between items-center h-16 w-full px-4 sm:px-[1vw] py-2 sm:py-[2vw]">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-5xl font-rogshire h-full flex items-center text-[#08090A]">
                   Transform
