@@ -37,7 +37,7 @@ const Main = () => {
               <div className="relative w-full h-[calc(100%-4rem)]  px-4 sm:px-[1vw]">
                 <p className="text-lg sm:text-xl lg:text-2xl 2xl:text-3xl text-[#FFFFFF] w-[90%] relative z-[99] font-rogshire leading-none">
                   I’m <span className="text-zinc-400 ">Tanush Singh</span>, a
-                  <span className="text-zinc-400 "> MERN Stack Developer</span>
+                  <span className="text-zinc-400 "> MERN Stack Developer </span>
                   who blends creativity and logic to build immersive,
                   high-performance web experiences. From code to motion, every
                   detail reflects precision and passion.

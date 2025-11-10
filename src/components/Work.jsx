@@ -128,10 +128,10 @@ const Work = () => {
             <div className="lg:hidden flex flex-col w-full">
               {/* Header with number and name */}
               <div className="flex justify-between items-center w-full mb-3">
-                <div className="text-2xl italic text-zinc-400">
+                <div className="text-4xl italic text-zinc-400">
                   {work.sno}
                 </div>
-                <div className="text-xl font-bold text-right">
+                <div className="text-4xl font-bold text-right">
                   {work.name}
                 </div>
               </div>
@@ -150,7 +150,7 @@ const Work = () => {
               </div>
               
               {/* Description */}
-              <div className="w-full text-sm text-zinc-300 leading-relaxed">
+              <div className="w-full text-2xl text-zinc-300 leading-relaxed">
                 {work.text}
               </div>
             </div>
