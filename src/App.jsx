@@ -36,12 +36,22 @@ const App = () => {
     };
   }, []);
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(() => {
+    // Check if loader has already been shown in this session
+    const hasLoaded = sessionStorage.getItem('portfolioLoaded');
+    return !hasLoaded; // Only show loader if not loaded before
+  });
+
   useEffect(() => {
-    // Simulate loading (fetch, assets, etc.)
-    const timer = setTimeout(() => setLoading(false), 5000);
-    return () => clearTimeout(timer);
-  }, []);
+    if (loading) {
+      // Simulate loading (fetch, assets, etc.)
+      const timer = setTimeout(() => {
+        setLoading(false);
+        sessionStorage.setItem('portfolioLoaded', 'true');
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [loading]);
 
   return (
     <div className="overflow-x-hidden">
