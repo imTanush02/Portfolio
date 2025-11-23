@@ -11,7 +11,7 @@ const Main = () => {
         About Myself
       </h1>
       <p className="font-rogshire text-zinc-300 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl w-full sm:w-[80%] lg:w-[60%] 2xl:w-[45vw] text-center">
-        I turn concepts into code, blending creativity and logic to shape
+        Blending creativity and logic to shape
         meaningful digital experiences.
       </p>
 
@@ -38,13 +38,13 @@ const Main = () => {
                 <p className="text-lg sm:text-xl lg:text-2xl 2xl:text-3xl text-[#FFFFFF] w-[90%] relative z-[99] font-rogshire leading-none">
                   I’m <span className="text-zinc-400 ">Tanush Singh</span>, a
                   <span className="text-zinc-400 "> MERN Stack Developer </span>
-                  who blends creativity and logic to build immersive,
-                  high-performance web experiences. From code to motion, every
-                  detail reflects precision and passion.
+                  building immersive, high-performance web experiences with precision and passion.
                 </p>
                 <img
                   src="/assets/BentoLaptopScreen.png"
                   alt="Design and Code"
+                  loading="lazy"
+                  decoding="async"
                   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50%] h-[80%] object-cover rounded-lg z-[9]"
                 />
               </div>
@@ -70,17 +70,15 @@ const Main = () => {
               </div>
               <div className="relative w-full h-[calc(100%-4rem)] px-4 sm:px-[1vw]">
                 <p className="text-lg sm:text-xl lg:text-2xl 2xl:text-3xl text-[#FFFFFF] w-[90%] relative z-[99] font-rogshire leading-none">
-                  I have participated in several hackathons, where I not only
-                  showcased my skills but also secured victories. These
-                  experiences have allowed me to push my limits, collaborate
-                  with talented individuals, and develop innovative solutions
-                  under pressure. Additionally, I have actively joined numerous
-                  coding events, continuously learning and connecting with
-                  like-minded enthusiasts to stay ahead in the tech world.
+                  Secured victories in multiple hackathons, pushing limits and
+                  collaborating on innovative solutions. Actively engaging in
+                  coding events to stay ahead in tech.
                 </p>
                 <img
                   src="/assets/SinglePhone.png"
                   alt="Design and Code"
+                  loading="lazy"
+                  decoding="async"
                   className="2xl:mt-[3vw] opacity-50 lg:mt-[20vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[20%] lg:w-[60%] 2xl:w-[60%] h-auto max-h-[80%] object-contain rounded-lg z-[9]"
                 />
               </div>
@@ -106,18 +104,16 @@ const Main = () => {
               </div>
               <div className="relative w-full h-[calc(100%-4rem)] px-4 sm:px-[1vw]">
                 <p className="text-lg sm:text-xl lg:text-2xl 2xl:text-3xl text-[#FFFFFF] w-[90%] relative z-[99] font-rogshire leading-none">
-                  My editing journey began on{" "}
-                  <span className="text-zinc-200">CapCut</span>, where I first
-                  explored storytelling through visuals. Later, I leveled up
-                  with <span className="text-zinc-200">Alight Motion</span> to
-                  master motion blur and transitions. Now, with my PC setup, I
-                  bring cinematic precision to life using{" "}
-                  <span className="text-zinc-200">After Effects</span>, blending
-                  visuals, rhythm, and emotion into every frame.
+                  Started with <span className="text-zinc-200">CapCut</span>,
+                  advanced to <span className="text-zinc-200">Alight Motion</span>,
+                  and now mastering <span className="text-zinc-200">After Effects</span>
+                  —blending visuals, rhythm, and emotion with cinematic precision.
                 </p>
                 <img
                   src="https://imgs.search.brave.com/UrG3svUvr4u8kkszhJlptgXeooq5ORuRA-0xK2z-aMk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMzk1/NDAwNi5qcGc"
                   alt="Design and Code"
+                  loading="lazy"
+                  decoding="async"
                   className="2xl:mt-[3vw] lg:mt-[20vh] opacity-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-[60%] 2xl:w-[100%] h-auto max-h-[80%] object-contain rounded-lg z-[9]"
                   style={{ filter: 'saturate(0.2)' }}
                 />
@@ -146,14 +142,14 @@ const Main = () => {
               </div>
               <div className="relative w-full h-[calc(100%-4rem)] px-4 sm:px-[1vw]">
                 <p className="text-lg sm:text-xl lg:text-2xl 2xl:text-3xl text-[#FFFFFF] w-[80%] relative z-[99] font-rogshire leading-none">
-                  From the vibrant heart of India, I code stories into reality.
-                  Blending design and development, I craft immersive,
-                  user-driven digital experiences — clean, elegant, and alive
-                  with creativity and precision.
+                  Based in India, I craft immersive, user-driven digital
+                  experiences that are clean, elegant, and alive.
                 </p>
                 <img
                   src="/assets/Bentoplanet.png"
                   alt="Design and Code"
+                  loading="lazy"
+                  decoding="async"
                   className="2xl:mt-[3vw] lg:mt-[20vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[20%] w-[100%] h-auto max-h-[100%] object-contain rounded-lg z-[9]"
                 />
               </div>
@@ -189,6 +185,8 @@ const Main = () => {
                 <img
                   src="/assets/Marshall.png"
                   alt="Design and Code"
+                  loading="lazy"
+                  decoding="async"
                   className="mt-[1vw] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-auto max-h-[100%] object-contain rounded-lg z-[9]"
                 />
               </div>
@@ -214,14 +212,14 @@ const Main = () => {
               </div>
               <div className="relative w-full h-[calc(100%-4rem)] px-4 sm:px-[1vw]">
                 <p className="text-lg sm:text-xl lg:text-2xl 2xl:text-3xl text-[#FFFFFF] w-[90%] relative z-[99] font-rogshire leading-none">
-                  Every line of code I write is shaped by design, emotion, and
-                  intent. I don’t just build interfaces — I craft experiences
-                  that connect, inspire, and leave a mark. It’s more than
-                  development — it’s digital art in motion.
+                  Every line of code is shaped by design and intent. I craft
+                  experiences that connect and inspire—digital art in motion.
                 </p>
                 <img
                   src="/assets/BentoLaptopScreen.png"
                   alt="Design and Code"
+                  loading="lazy"
+                  decoding="async"
                   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50%] h-[80%] object-cover rounded-lg z-[9]"
                 />
               </div>

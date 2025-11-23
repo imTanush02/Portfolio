@@ -99,10 +99,12 @@ const LandingPage = () => {
           <div className="w-[10%] h-full bg-zinc-300"></div>
           <div className="w-[5%] mt-[15vh] lg:mt-[30vh] h-[5vh] lg:h-[10vh] bg-zinc-300"></div>
 
-          <div className="absolute right-0 lg:right-[-3%] mt-[2%] lg:mt-[4%] 2xl:mt-[8%] pointer-events-none w-1/2 lg:w-[55%] 2xl:w-[48%]">
+          <div className="absolute right-0 lg:right-[-3%] mt-[2%] lg:mt-[4%] 2xl:mt-[8%] pointer-events-none w-1/2 lg:w-[55%] 2xl:w-[48%] overflow-hidden">
             <img
               src="/assets/Modelimg.png"
               alt=""
+              loading="lazy"
+              decoding="async"
               className="w-full scale-[170%] lg:scale-[100%] mt-[50%] lg:mt-[0%] h-auto"
             />
           </div>

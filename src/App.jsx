@@ -1,16 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { GridBackgroundDemo } from "./Functions/Background";
-import LandingPage from "./components/LandingPage";
 import { Spotlight } from "./Functions/Spotlight";
 import Lenis from "@studio-freight/lenis";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Main from "./components/Main";
-import Section from "./components/Section";
-import Footer from "./components/Footer";
-import Work from "./components/Work";
 import Loader from "./components/Loader";
 import { AnimatePresence } from "framer-motion";
+
+// Lazy load components
+const LandingPage = React.lazy(() => import("./components/LandingPage"));
+const Main = React.lazy(() => import("./components/Main"));
+const Section = React.lazy(() => import("./components/Section"));
+const Work = React.lazy(() => import("./components/Work"));
+const Footer = React.lazy(() => import("./components/Footer"));
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,11 +46,11 @@ const App = () => {
 
   useEffect(() => {
     if (loading) {
-      // Simulate loading (fetch, assets, etc.)
+      // Reduced simulation time for better UX
       const timer = setTimeout(() => {
         setLoading(false);
         sessionStorage.setItem('portfolioLoaded', 'true');
-      }, 5000);
+      }, 2000); // Reduced from 5000ms to 2000ms
       return () => clearTimeout(timer);
     }
   }, [loading]);
@@ -57,7 +59,7 @@ const App = () => {
     <div className="overflow-x-hidden">
       <AnimatePresence>{loading && <Loader />}</AnimatePresence>
       {!loading && (
-        <>
+        <Suspense fallback={<div className="h-screen w-full bg-black"></div>}>
           <div className="fixed inset-0">
             <GridBackgroundDemo />
           </div>
@@ -69,7 +71,7 @@ const App = () => {
             <Work />
             <Footer />
           </div>
-        </>
+        </Suspense>
       )}
     </div>
   );

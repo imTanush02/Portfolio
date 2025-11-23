@@ -144,6 +144,7 @@ const Work = () => {
                   loop
                   muted
                   playsInline
+                  preload="none"
                 >
                   <source src={work.vid} type="video/mp4" />
                 </video>
@@ -175,6 +176,7 @@ const Work = () => {
                 loop
                 muted
                 playsInline
+                preload="none"
               >
                 <source src={work.vid} type="video/mp4" />
               </video>
