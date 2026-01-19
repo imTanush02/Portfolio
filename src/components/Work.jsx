@@ -54,6 +54,13 @@ const Work = () => {
     },
     {
       sno: "06",
+      name: "BUGATTI",
+      text: "Just discovered how much i can do with AI , this wbsite is 5% code and 95% AI.",
+      vid: "/videos/car.mp4",
+      link: "https://bugatti-website-nu.vercel.app/",
+    },
+    {
+      sno: "07",
       name: "CYBERPUNK",
       text: "Whether it's crafting sleek UI, fluid animations, or building a Cyberpunk world in Three.js — pure fun.",
       vid: "/videos/Cyber Punk.mp4",
@@ -109,7 +116,7 @@ const Work = () => {
   return (
     <div
       id="works"
-      className="w-full lg:h-[220vh] relative font-rogshire mt-[100%] lg:mt-20 min-h-screen bg-black text-white p-5 lg:p-10 overflow-hidden"
+      className="w-full lg:h-[240vh] relative font-rogshire mt-[100%] lg:mt-20 min-h-screen bg-black text-white p-5 lg:p-10 overflow-hidden"
     >
       <h1 className="text-6xl lg:text-8xl font-rogshire text-center lg:text-start text-zinc-300">
         Best Works
